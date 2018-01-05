@@ -4,11 +4,14 @@ html {
 	margin: 0;
 	min-height: 100%;
 }
-
+/*Start of Navigation Bar*/
 .nav {
 	background: #02908B;
 	height: 130px;
-	z-index: 1000;
+	z-index: 0;
+	position: fixed;
+	left: 0;
+	right:0;
 
 }
 
@@ -24,7 +27,7 @@ html {
 
 .nav ul{
 	position: absolute;
-	right: 25px;
+	right: 200px;
 	top: 5px;
 }
 .nav li{
@@ -34,7 +37,7 @@ html {
 
 .nav ul li a{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 30px;
+	font-size: 45px;
 	font-weight: 500;
 	text-decoration: none;
 	color: white;
@@ -44,7 +47,12 @@ html {
 .nav span {
 	color: #CFC91D;
 }
-
+.nav a:hover {
+    color: #CFC91D;
+    transition: all .5s linear
+}
+/* End of Navigation Bar*/
+/* Start of Header*/
 .header {
 	background-attachment: fixed;
 	background-image: url(http://codifyacademy.com/week2/intermediate/img/headerbg.png);
@@ -52,8 +60,54 @@ html {
 	background-size: 100% 100%;
 	background-position: 100% 50%;
 	color: #fff;
-	height: 500px;
+	height: 900px;
 	padding-top: 15%;
 	text-align: center;
 }
 
+.header h3{
+	font-size: 60px;
+}
+
+.header h1{
+	font-size: 100px;
+}
+
+.header h4 {
+	font-size: 45px;
+	margin-top: 30px;
+}
+.header img{
+	height: 100px;
+	width: 300px;
+}
+/* End of Header*/
+/* Start of aboutMe*/
+.aboutMe {
+	background-color: white;
+	height: 1000px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 40px;
+	color: grey;
+	padding: 30px;
+}
+ .aboutMe h1 {
+ 	color: #02908B;
+ 	font-weight: 50px
+ }
+
+ .aboutMe p {
+ 	width: 600px;
+ }
+
+.aboutBoxes {
+	border-right: 1px solid black;
+	color: grey;
+	width: 300px;
+	height: 500px;
+	display: inline-block;
+	float: left;
+	text-align:center;
+}
+/*End of aboutMe*/
